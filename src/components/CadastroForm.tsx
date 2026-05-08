@@ -105,9 +105,20 @@ export default function CadastroForm() {
     }
   }, [linha]);
 
+  const rolarParaPrimeiroErro = () => {
+    const primeiro = document.querySelector('[class*="border-red"]');
+    if (primeiro) {
+      primeiro.scrollIntoView({ behavior: "smooth", block: "center" });
+      (primeiro as HTMLElement).focus();
+    }
+  };
+
   const enviar = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validarFormulario()) return;
+    if (!validarFormulario()) {
+      setTimeout(rolarParaPrimeiroErro, 100);
+      return;
+    }
     setSalvando(true);
     const res = await fetch("/api/cadastro", {
       method: "POST",
@@ -178,7 +189,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
       <form onSubmit={enviar} className="space-y-6 mt-6">
         <SectionTitle number={1} title="Responsável" />
 
-        <div className="space-y-1 relative">
+        <div id="field-responsavel" className="space-y-1 relative">
           <InputFloating
             label="Nome do Responsável"
             value={responsavel}
@@ -189,7 +200,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
             }}
           />
         </div>
-        <div>
+        <div id="field-endereco">
           <InputFloating
             label="Endereço (nome da Fazenda, Sitio ou Chácara)"
             value={endereco}
@@ -201,7 +212,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
           />
         </div>
 
-        <div className="pt-8 ">
+        <div id="field-alunos" className="pt-8 ">
           <SectionTitle number={2} title="Alunos" />
           <AlunosForm
             filhos={filhos}
@@ -212,7 +223,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
         </div>
 
         <SectionTitle number={3} title="Linha" />
-        <div>
+        <div id="field-linha">
           <select
             name="linhas"
             className={`

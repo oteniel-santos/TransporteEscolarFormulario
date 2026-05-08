@@ -39,7 +39,7 @@ export default function AlunosForm({
           key={index}
           className="relative border border-gray-200 bg-white rounded-lg p-4 shadow-sm pt-8"
         >
-          <div>
+          <div id={`field-aluno-${index}-nome`}>
             <InputFloating
               label="Nome do Aluno"
               value={filho.nome}
@@ -51,7 +51,7 @@ export default function AlunosForm({
             />
           </div>
 
-          <div className="mt-4">
+          <div id={`field-aluno-${index}-escola`} className="mt-4">
             <select
               className={`
                       block w-full 
@@ -88,7 +88,7 @@ export default function AlunosForm({
             )}
           </div>
 
-          <div className="mt-4">
+          <div id={`field-aluno-${index}-turma`} className="mt-4">
             <select
               className={`
                       block w-full 
