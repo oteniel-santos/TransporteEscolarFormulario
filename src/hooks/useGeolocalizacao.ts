@@ -39,10 +39,16 @@ export function useGeolocalizacao() {
     obterLocalizacao(true);
   }, []);
 
+  const atualizarPosicaoManual = (lat: number, lng: number) => {
+    setLatitude(lat);
+    setLongitude(lng);
+  };
+
   return {
     latitude,
     longitude,
     erro,
+    atualizarPosicaoManual,
     obterLocalizacao,
     localizacaoErro: erro.localizacao,
     tentouAutomatico,
