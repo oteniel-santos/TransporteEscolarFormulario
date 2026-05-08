@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { LINHAS } from "@/constants/linhas";
 import { getNomeEscola } from "@/constants/escolas";
@@ -7,7 +7,7 @@ import { LINHAS_GPX } from "@/constants/linhas-gpx";
 import { carregarGPX } from "@/lib/gpx";
 import { Filho, Errors } from "@/types/cadastro";
 import { useGeolocalizacao } from "@/hooks/useGeolocalizacao";
-import { useDetectarLinha } from "@/hooks/useDetectarLinha";
+
 import SectionTitle from "./SectionTitle";
 import AlunosForm from "./AlunosForm";
 import { InputFloating } from "./InputFloating";
@@ -27,8 +27,6 @@ export default function CadastroForm() {
   const [rotaLinha, setRotaLinha] = useState<{ lat: number; lng: number }[]>(
     [],
   );
-  const [mensagemLinha, setMensagemLinha] = useState("");
-
   const {
     latitude,
     longitude,
@@ -37,8 +35,6 @@ export default function CadastroForm() {
     carregando,
     obterLocalizacao,
   } = useGeolocalizacao();
-  const { detectarLinhaPorGPX } = useDetectarLinha();
-
   const pontoCasa = useMemo(() => {
     if (!latitude || !longitude) return undefined;
     return { lat: latitude, lng: longitude };
@@ -59,22 +55,6 @@ export default function CadastroForm() {
       };
     });
   };
-
-  const linhaDetectadaRef = useRef(false);
-  useEffect(() => {
-    if (!latitude || !longitude) return;
-    if (linhaDetectadaRef.current) return;
-    if (linha) return;
-    linhaDetectadaRef.current = true;
-    detectarLinhaPorGPX(latitude, longitude).then((res) => {
-      if (res) {
-        setLinha(Number(res.linhaId));
-        setMensagemLinha("Linha identificada automaticamente.");
-      } else {
-        setMensagemLinha("Selecione a linha manualmente.");
-      }
-    });
-  }, [latitude, longitude]);
 
   // VALIDAR FORMULÁRIO
   function validarFormulario(): boolean {
@@ -265,47 +245,49 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
           {errors.linha && (
             <p className="text-red-500 text-xs leading-tight">{errors.linha}</p>
           )}
-          {rotaLinha.length > 0 && (
-            <p className="text-xs ">
-              Identidicamos automaticamente sua linha. Caso esteja incorreta
-              você pode alterar.
-            </p>
-          )}
         </div>
 
-        <div className="h-96 border rounded flex items-center justify-center bg-gray-50 text-gray-600 text-sm relative overflow-hidden">
-          {localizacaoErro ? (
-            <div>
+        <div>
+          <div className="h-96 border rounded flex items-center justify-center bg-gray-50 text-gray-600 text-sm relative overflow-hidden">
+            {localizacaoErro ? (
+              <div>
+                <p className="text-center px-4">
+                  🚫 A localização está bloqueada no navegador.
+                  <br />
+                  Clique no ícone de cadeado na barra de endereço e permita o
+                  acesso.
+                </p>
+
+                <button
+                  type="button"
+                  onClick={() => obterLocalizacao(false)}
+                  disabled={carregando}
+                  className="w-full border-0 bg-yellow-300 p-2 rounded text-sm text-gray-900 hover:bg-yellow-400 mt-4 font-bold"
+                >
+                  {carregando
+                    ? "Carregando localização..."
+                    : " Tentar usar minha localização novamente"}
+                </button>
+              </div>
+            ) : pontoCasa ? (
+              <MapaLinha
+                rota={rotaLinha}
+                pontoCasa={pontoCasa}
+                tipoMapa={tipoMapa}
+              />
+            ) : (
               <p className="text-center px-4">
-                🚫 A localização está bloqueada no navegador.
-                <br />
-                Clique no ícone de cadeado na barra de endereço e permita o
-                acesso.
+                Obtendo localização automaticamente…
               </p>
-
-              <button
-                type="button"
-                onClick={() => obterLocalizacao(false)}
-                disabled={carregando}
-                className="w-full border-0 bg-yellow-300 p-2 rounded text-sm text-gray-900 hover:bg-yellow-400 mt-4 font-bold"
-              >
-                {carregando
-                  ? "Carregando localização..."
-                  : " Tentar usar minha localização novamente"}
-              </button>
-            </div>
-          ) : pontoCasa ? (
-            <MapaLinha
-              rota={rotaLinha}
-              pontoCasa={pontoCasa}
-              tipoMapa={tipoMapa}
-            />
-          ) : (
-            <p className="text-center px-4">
-              Obtendo localização automaticamente…
-            </p>
-          )}
+            )}
+          </div>
         </div>
+
+        <p className="text-xs leading-5 text-slate-500">
+          O marcado azul indica a posição da sua casa. Caso ela esteja
+          incorreta, arraste o marcador azul para o local exato de onde você
+          mora. Utilize a visão de satélite para facilitar sua visualização.
+        </p>
 
         {/* BOTÕES DE CONTROLE DO MAPA */}
         <div className="flex gap-2 justify-center">
@@ -344,9 +326,32 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white p-3 rounded"
+          disabled={salvando || carregando}
+          className={`w-full p-3 rounded flex items-center justify-center gap-2 ${
+            salvando || carregando
+              ? "bg-blue-400 cursor-not-allowed"
+              : "bg-blue-600 hover:bg-blue-700"
+          } text-white`}
         >
-          {salvando ? "Enviando..." : "Enviar"}
+          {salvando ? (
+            <>
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+              </svg>
+              Enviando...
+            </>
+          ) : carregando ? (
+            <>
+              <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+              </svg>
+              Obtendo localização...
+            </>
+          ) : (
+            "Enviar"
+          )}
         </button>
       </form>
       <p className="mt-10 text-center text-sm/6 text-gray-400">
