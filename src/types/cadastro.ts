@@ -7,6 +7,7 @@ export type Filho = {
 
 export type Errors = {
   responsavel?: string;
+  nucleo?: string;
   linha?: string;
   localizacao?: string;
   endereco?: string;

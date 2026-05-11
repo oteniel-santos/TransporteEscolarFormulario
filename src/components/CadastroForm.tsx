@@ -2,6 +2,7 @@
 import { useState, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { LINHAS } from "@/constants/linhas";
+import { NUCLEOS } from "@/constants/nucleos";
 import { getNomeEscola } from "@/constants/escolas";
 import { LINHAS_GPX } from "@/constants/linhas-gpx";
 import { carregarGPX } from "@/lib/gpx";
@@ -17,6 +18,7 @@ const MapaLinha = dynamic(() => import("./MapaLinha"), { ssr: false });
 export default function CadastroForm() {
   const [responsavel, setResponsavel] = useState("");
   const [endereco, setEndereco] = useState("");
+  const [nucleo, setNucleo] = useState<number | "">("");
   const [linha, setLinha] = useState<number | "">("");
   const [filhos, setFilhos] = useState<Filho[]>([
     { nome: "", escolaId: "", escolaNome: "", turma: "" },
@@ -69,6 +71,10 @@ export default function CadastroForm() {
       novosErros.endereco = "Informe o endereço";
     }
 
+    if (!nucleo) {
+      novosErros.nucleo = "Selecione o núcleo";
+    }
+
     if (!linha) {
       novosErros.linha = "Selecione a linha do transporte";
     }
@@ -87,6 +93,7 @@ export default function CadastroForm() {
 
     const temErro =
       novosErros.responsavel ||
+      novosErros.nucleo ||
       novosErros.linha ||
       // novosErros.localizacao ||
       novosErros.filhos!.some((f) => Object.keys(f).length > 0);
@@ -127,6 +134,7 @@ export default function CadastroForm() {
       body: JSON.stringify({
         responsavel,
         endereco,
+        nucleo,
         linha,
         latitude,
         longitude,
@@ -136,11 +144,13 @@ export default function CadastroForm() {
     const data = await res.json();
     if (data.ok) {
       const d = LINHAS.find((l) => l.id === Number(linha));
+      const n = NUCLEOS.find((n) => n.id === Number(nucleo));
       const msg = `
 
 *CADASTRO TRANSPORTE ESCOLAR-2026*
 *Responsável:* ${responsavel.toUpperCase()}
 *Endereço:* ${endereco.toUpperCase()}
+🏫 *Núcleo:* ${n?.nome}
 🚌 *Linha:* ${d?.nome}
 🧑‍✈️ *Motorista:* ${d?.motorista}
 📞 *Fone Motorista:* ${d?.telefone}
@@ -211,6 +221,42 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
               setErrors((prev) => ({ ...prev, endereco: undefined }));
             }}
           />
+        </div>
+
+        <div id="field-nucleo">
+          <select
+            className={`
+              block w-full
+              rounded-md border
+              px-3
+              py-2.5
+              text-base
+              bg-white/5
+              text-gray-600
+              border-gray-500
+              -outline-offset-1
+              placeholder:text-gray-500
+              focus:outline-2
+              focus:-outline-offset-2
+              focus:outline-indigo-500
+              sm:text-sm
+              ${errors.nucleo ? "border border-red-500" : ""}`}
+            value={nucleo}
+            onChange={(e) => {
+              setNucleo(Number(e.target.value));
+              setErrors((prev) => ({ ...prev, nucleo: undefined }));
+            }}
+          >
+            <option value="">Selecione um núcleo</option>
+            {NUCLEOS.map((n) => (
+              <option key={n.id} value={n.id}>
+                {n.nome}
+              </option>
+            ))}
+          </select>
+          {errors.nucleo && (
+            <p className="text-red-500 text-xs leading-tight">{errors.nucleo}</p>
+          )}
         </div>
 
         <div id="field-alunos" className="pt-8 ">
