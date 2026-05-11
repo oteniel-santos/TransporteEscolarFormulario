@@ -43,6 +43,11 @@ export default function CadastroForm() {
     return { lat: latitude, lng: longitude };
   }, [latitude, longitude]);
 
+  const linhasFiltradas = useMemo(() => {
+    if (!nucleo) return [];
+    return LINHAS.filter((l) => l.nucleoId === Number(nucleo));
+  }, [nucleo]);
+
   const limparErroFilho = (index: number, campo: keyof Filho) => {
     setErrors((prev) => {
       if (!prev.filhos) return prev;
@@ -244,6 +249,8 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
             value={nucleo}
             onChange={(e) => {
               setNucleo(Number(e.target.value));
+              setLinha("");
+              setFilhos(filhos.map(f => ({ ...f, escolaId: "", escolaNome: "", turma: "" })));
               setErrors((prev) => ({ ...prev, nucleo: undefined }));
             }}
           >
@@ -262,6 +269,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
         <div id="field-alunos" className="pt-8 ">
           <SectionTitle number={2} title="Alunos" />
           <AlunosForm
+            nucleoId={nucleo}
             filhos={filhos}
             setFilhos={setFilhos}
             errors={errors}
@@ -273,6 +281,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
         <div id="field-linha">
           <select
             name="linhas"
+            disabled={!nucleo}
             className={`
                       block w-full 
                       rounded-md border 
@@ -292,8 +301,8 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
             value={linha}
             onChange={(e) => setLinha(Number(e.target.value))}
           >
-            <option value="">Selecione uma linha</option>
-            {LINHAS.map((l) => (
+            <option value="">{nucleo ? "Selecione uma linha" : "Selecione um núcleo primeiro"}</option>
+            {linhasFiltradas.map((l) => (
               <option key={l.id} value={l.id}>
                 {l.nome} - Motorista: {l.motorista}
               </option>

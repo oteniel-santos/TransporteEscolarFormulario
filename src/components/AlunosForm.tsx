@@ -1,7 +1,7 @@
 "use client";
 import { Filho } from "@/types/cadastro";
 import { ESCOLAS, selecionarTurmas } from "@/constants/escolas";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useMemo } from "react";
 import { InputFloating } from "./InputFloating";
 
 type AlunosFormProps = {
@@ -9,6 +9,7 @@ type AlunosFormProps = {
   setFilhos: Dispatch<SetStateAction<Filho[]>>;
   errors: any;
   limparErroFilho: (index: number, campo: keyof Filho) => void;
+  nucleoId: number | "";
 };
 
 export default function AlunosForm({
@@ -16,6 +17,7 @@ export default function AlunosForm({
   setFilhos,
   errors,
   limparErroFilho,
+  nucleoId,
 }: AlunosFormProps) {
   const adicionarFilho = () => {
     setFilhos([
@@ -31,6 +33,11 @@ export default function AlunosForm({
     novaLista[index] = { ...novaLista[index], [campo]: valor };
     setFilhos(novaLista);
   };
+
+  const escolasFiltradas = useMemo(() => {
+    if (!nucleoId) return [];
+    return ESCOLAS.filter((e) => e.nucleoId === Number(nucleoId));
+  }, [nucleoId]);
 
   return (
     <div className="space-y-4 mt-4">
@@ -53,6 +60,7 @@ export default function AlunosForm({
 
           <div id={`field-aluno-${index}-escola`} className="mt-4">
             <select
+              disabled={!nucleoId}
               className={`
                       block w-full 
                       rounded-md border 
@@ -74,8 +82,8 @@ export default function AlunosForm({
                 atualizarFilho(index, "escolaId", Number(e.target.value))
               }
             >
-              <option value="">Selecione a escola</option>
-              {ESCOLAS.map((e) => (
+              <option value="">{nucleoId ? "Selecione a escola" : "Selecione um núcleo primeiro"}</option>
+              {escolasFiltradas.map((e) => (
                 <option key={e.id} value={e.id}>
                   {e.nome}
                 </option>

@@ -34,6 +34,7 @@ export type Linha = {
   motorista: string;
   telefone: string;
   arquivoGPX: string;
+  nucleoId: number;
 };
 
 export type Escola = {
