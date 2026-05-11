@@ -13,6 +13,8 @@ import SectionTitle from "./SectionTitle";
 import AlunosForm from "./AlunosForm";
 import { InputFloating } from "./InputFloating";
 
+const WHATSAPP_NUMBER = "5566992028229";
+
 const MapaLinha = dynamic(() => import("./MapaLinha"), { ssr: false });
 
 export default function CadastroForm() {
@@ -151,28 +153,27 @@ export default function CadastroForm() {
       const d = LINHAS.find((l) => l.id === Number(linha));
       const n = NUCLEOS.find((n) => n.id === Number(nucleo));
       const msg = `
+${filhos
+  .map(
+    (f) => `*CADASTRO TRANSPORTE ESCOLAR 2026*
+  Nome: ${f.nome.toUpperCase()}
+  Escola: ${getNomeEscola(f.escolaId)}
+  Serie: ${f.turma}
+  Responsável: ${responsavel.toUpperCase()}
+  Endereço: ${endereco.toUpperCase()}
+  Núcleo: ${n?.nome}
 
-*CADASTRO TRANSPORTE ESCOLAR-2026*
-*Responsável:* ${responsavel.toUpperCase()}
-*Endereço:* ${endereco.toUpperCase()}
-🏫 *Núcleo:* ${n?.nome}
-🚌 *Linha:* ${d?.nome}
-🧑‍✈️ *Motorista:* ${d?.motorista}
-📞 *Fone Motorista:* ${d?.telefone}
-( Clique no número acima para falar com o motorista) 
+*LINHA*
+  Linha Ônibus: ${d?.nome}
+  Motorista: ${d?.motorista}
+  Fone Motorista: ${d?.telefone}
 
-*LOCALIZAÇÃO* 
- - Latitude: ${latitude ? latitude : "Não Informada"}
- - Longitude: ${longitude ? longitude : "Não Informada"}
-
-*ALUNOS:*
-${filhos.map((f, i) => `${i + 1} - ${f.nome.toUpperCase()} (${getNomeEscola(f.escolaId)} - ${f.turma})`).join("\n")}
-------------------------
-CONTATO RESPONSAVEL
-${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
-
+*LOCALIZAÇÃO*
+  Coordenadas da Casa: Lat: ${latitude ? latitude : "Não Informada"}, Long: ${longitude ? longitude : "Não Informada"}`,
+  )
+  .join("\n\n====================\n")}
 `;
-      window.location.href = `https://wa.me/5566992028229?text=${encodeURIComponent(msg)}`;
+      window.location.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
     }
     setSalvando(false);
   };
@@ -460,7 +461,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
       <p className="mt-10 text-center text-sm/6 text-gray-400">
         Algum problema para preencher o cadastro? <br />
         <a
-          href="https://wa.me/5566992028229?text=Ol%C3%A1%2C%20preciso%20de%20ajuda%20para%20preencher%20o%20cadastro%20do%20transporte%20escolar."
+          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá, preciso de ajuda para preencher o cadastro do transporte escolar.")}`}
           className="font-semibold text-indigo-600 hover:text-indigo-900"
         >
           Converse com o Suporte
