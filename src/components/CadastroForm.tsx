@@ -234,23 +234,30 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
               block w-full
               rounded-md border
               px-3
-              py-2.5
+              py-4
               text-base
               bg-white/5
               text-gray-600
-              border-gray-500
+              border-gray-300
               -outline-offset-1
               placeholder:text-gray-500
               focus:outline-2
               focus:-outline-offset-2
               focus:outline-indigo-500
-              sm:text-sm
+              sm:text-sm/6
               ${errors.nucleo ? "border border-red-500" : ""}`}
             value={nucleo}
             onChange={(e) => {
               setNucleo(Number(e.target.value));
               setLinha("");
-              setFilhos(filhos.map(f => ({ ...f, escolaId: "", escolaNome: "", turma: "" })));
+              setFilhos(
+                filhos.map((f) => ({
+                  ...f,
+                  escolaId: "",
+                  escolaNome: "",
+                  turma: "",
+                })),
+              );
               setErrors((prev) => ({ ...prev, nucleo: undefined }));
             }}
           >
@@ -262,7 +269,9 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
             ))}
           </select>
           {errors.nucleo && (
-            <p className="text-red-500 text-xs leading-tight">{errors.nucleo}</p>
+            <p className="text-red-500 text-xs leading-tight">
+              {errors.nucleo}
+            </p>
           )}
         </div>
 
@@ -286,7 +295,7 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
                       block w-full 
                       rounded-md border 
                       px-3 
-                      py-2.5 
+                      py-4 
                       text-base
                       bg-white/5
                       text-gray-600 
@@ -301,7 +310,9 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
             value={linha}
             onChange={(e) => setLinha(Number(e.target.value))}
           >
-            <option value="">{nucleo ? "Selecione uma linha" : "Selecione um núcleo primeiro"}</option>
+            <option value="">
+              {nucleo ? "Selecione uma linha" : "Selecione um núcleo primeiro"}
+            </option>
             {linhasFiltradas.map((l) => (
               <option key={l.id} value={l.id}>
                 {l.nome} - Motorista: {l.motorista}
@@ -404,16 +415,40 @@ ${responsavel.toUpperCase()} - ${endereco.toUpperCase()} - ${d?.nome}
           {salvando ? (
             <>
               <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                />
               </svg>
               Enviando...
             </>
           ) : carregando ? (
             <>
               <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  fill="none"
+                />
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                />
               </svg>
               Obtendo localização...
             </>
