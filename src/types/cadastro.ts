@@ -35,11 +35,14 @@ export type Linha = {
   telefone: string;
   arquivoGPX: string;
   nucleoId: number;
+  turno: string;
 };
 
 export type Escola = {
   id: number;
   nome: string;
+  nucleoId: number;
+  etapas: string[];
 };
 
 export type LinhaGPX = {
