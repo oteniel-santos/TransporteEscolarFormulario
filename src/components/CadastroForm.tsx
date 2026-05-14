@@ -21,8 +21,9 @@ export default function CadastroForm() {
   const [endereco, setEndereco] = useState("");
   const [nucleo, setNucleo] = useState<number | "">("");
   const [linha, setLinha] = useState<number | "">("");
+  const [turnoFiltro, setTurnoFiltro] = useState("");
   const [filhos, setFilhos] = useState<Filho[]>([
-    { nome: "", escolaId: "", escolaNome: "", turma: "" },
+    { nome: "", escolaId: "", escolaNome: "", turma: "", turno: "" },
   ]);
   const [errors, setErrors] = useState<Errors>({});
   const [salvando, setSalvando] = useState(false);
@@ -47,8 +48,20 @@ export default function CadastroForm() {
 
   const linhasFiltradas = useMemo(() => {
     if (!nucleo) return [];
-    return LINHAS.filter((l) => l.nucleoId === Number(nucleo));
-  }, [nucleo]);
+    let filtradas = LINHAS.filter((l) => l.nucleoId === Number(nucleo));
+    if (turnoFiltro) {
+      filtradas = filtradas.filter((l) => l.turno === turnoFiltro);
+    }
+    return filtradas;
+  }, [nucleo, turnoFiltro]);
+
+  useEffect(() => {
+    if (filhos[0]?.turno) {
+      setTurnoFiltro(filhos[0].turno);
+    } else {
+      setTurnoFiltro("");
+    }
+  }, [filhos[0]?.turno]);
 
   const limparErroFilho = (index: number, campo: keyof Filho) => {
     setErrors((prev) => {
@@ -95,6 +108,7 @@ export default function CadastroForm() {
       if (!f.nome) erroFilho.nome = "Informe o nome do aluno";
       if (!f.escolaId) erroFilho.escola = "Selecione a escola";
       if (!f.turma) erroFilho.turma = "Informe a turma";
+      if (!f.turno) erroFilho.turno = "Selecione o turno";
       novosErros.filhos![i] = erroFilho;
     });
 
@@ -159,6 +173,7 @@ ${filhos
   Nome: ${f.nome.toUpperCase()}
   Escola: ${getNomeEscola(f.escolaId)}
   Serie: ${f.turma}
+  Turno: ${f.turno}
   Responsável: ${responsavel.toUpperCase()}
   Endereço: ${endereco.toUpperCase()}
   Núcleo: ${n?.nome}
@@ -257,6 +272,7 @@ ${filhos
                   escolaId: "",
                   escolaNome: "",
                   turma: "",
+                  turno: "",
                 })),
               );
               setErrors((prev) => ({ ...prev, nucleo: undefined }));

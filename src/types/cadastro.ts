@@ -3,11 +3,13 @@ export type Filho = {
   escolaId: number | "";
   escolaNome: string;
   turma: string;
+  turno: string;
 };
 
 export type Errors = {
   responsavel?: string;
   nucleo?: string;
+  turno?: string;
   linha?: string;
   localizacao?: string;
   endereco?: string;
@@ -15,6 +17,7 @@ export type Errors = {
     nome?: string;
     escola?: string;
     turma?: string;
+    turno?: string;
   }[];
 };
 

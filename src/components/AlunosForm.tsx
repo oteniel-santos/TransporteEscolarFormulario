@@ -22,7 +22,7 @@ export default function AlunosForm({
   const adicionarFilho = () => {
     setFilhos([
       ...filhos,
-      { nome: "", escolaId: "", escolaNome: "", turma: "" },
+      { nome: "", escolaId: "", escolaNome: "", turma: "", turno: "" },
     ]);
   };
   const removerFilho = (index: number) => {
@@ -137,6 +137,39 @@ export default function AlunosForm({
               </p>
             )}
           </div>
+
+          <div id={`field-aluno-${index}-turno`} className="mt-4">
+            <select
+              className={`
+                      block w-full 
+                      rounded-md border 
+                      px-3 
+                      py-4
+                    
+                      text-base
+                      bg-white/5
+                      text-gray-600 
+                     border-gray-300
+                      -outline-offset-1
+                      placeholder:text-gray-500
+                      focus:outline-2 
+                      focus:-outline-offset-2
+                      focus:outline-indigo-500 
+                      sm:text-sm/6
+                     ${errors?.filhos?.[index]?.turno ? "border-red-500" : ""} `}
+              value={filho.turno}
+              onChange={(e) => atualizarFilho(index, "turno", e.target.value)}
+            >
+              <option value="">Selecione o Turno</option>
+              <option value="MATUTINO">MATUTINO</option>
+              <option value="VESPERTINO">VESPERTINO</option>
+            </select>
+            {errors?.filhos?.[index]?.turno && (
+              <p className="text-xs text-red-600 mt-1">
+                {errors.filhos[index].turno}
+              </p>
+            )}
+          </div>
           {filhos.length > 1 && (
             <button
               type="button"
@@ -160,13 +193,17 @@ export default function AlunosForm({
           )}
         </div>
       ))}
+      {/* 
+      
+      Botão para adicionar mais filhos, caso queira permitir mais de um filho por cadastro. Se quiser limitar a apenas um filho, pode remover esse botão e a lógica relacionada.
+
       <button
-        onClick={adicionarFilho}
-        type="button"
-        className="w-full border-2 border-dotted p-3 text-blue-600 rounded"
+       onClick={adicionarFilho}
+       type="button"
+       className="w-full border-2 border-dotted p-3 text-blue-600 rounded"
       >
-        + Adicionar aluno
-      </button>
+       
+      </button> */}
     </div>
   );
 }
