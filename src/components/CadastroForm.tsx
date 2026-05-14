@@ -12,7 +12,7 @@ import SectionTitle from "./SectionTitle";
 import AlunosForm from "./AlunosForm";
 import { InputFloating } from "./InputFloating";
 
-const WHATSAPP_NUMBER = "5566992028229";
+const WHATSAPP_NUMBER = "556599351913";
 
 const MapaLinha = dynamic(() => import("./MapaLinha"), { ssr: false });
 
@@ -203,12 +203,11 @@ ${filhos
       <div className="">
         <img
           alt="Your Company"
-          src="/CARD-MODELO.svg"
-          className="mx-auto h-20 w-auto"
+          src="/logo-carceres.png"
+          className="mx-auto h-30 w-auto"
         />
         <p className="mt-2 text-center text-sm text-gray-700">
-          Secretaria Municipal de Educação, Cultura, Esporte e Lazer <br />
-          Novo Mundo - MT
+          Cárceres - Secretaria Municipal de Educação
         </p>
         <h2 className="p-2  text-center text-2xl font-bold tracking-tight text-cyan-900 rounded-4xl">
           CADASTRO TRANSPORTE ESCOLAR 2026
@@ -281,7 +280,7 @@ ${filhos
             <option value="">Selecione um núcleo</option>
             {NUCLEOS.map((n) => (
               <option key={n.id} value={n.id}>
-                {n.nome}
+                {n.id}-{n.nome}
               </option>
             ))}
           </select>

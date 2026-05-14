@@ -6,7 +6,7 @@ export const LINHAS: Linha[] = [
     "nome": "ALEGRIA 1 / AGUA BOA",
     "motorista": "JULIANO DA SILVA CRUZ",
     "telefone": "6599362135",
-    "arquivoGPX": "gpx/01.gpx",
+    "arquivoGPX": "01",
     "nucleoId": 3,
     "turno": "VESPERTINO"
   },
@@ -15,7 +15,7 @@ export const LINHAS: Linha[] = [
     "nome": "ALEGRIA 2 / AGUA BOA",
     "motorista": "ADRIELTON NASCIMENTO CARVALHO",
     "telefone": "6599573628",
-    "arquivoGPX": "gpx/02.gpx",
+    "arquivoGPX": "02",
     "nucleoId": 3,
     "turno": "MATUTINO"
   },
@@ -24,7 +24,7 @@ export const LINHAS: Linha[] = [
     "nome": "ARIZONA/ BOA SORTE/CARANDA",
     "motorista": "EDER PRADO DE SOUZA",
     "telefone": "6596079876",
-    "arquivoGPX": "gpx/03.gpx",
+    "arquivoGPX": "03",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -33,7 +33,7 @@ export const LINHAS: Linha[] = [
     "nome": "ARIZONA/ BOA SORTE/CARANDA",
     "motorista": "EDER PRADO DE SOUZA",
     "telefone": "6596079876",
-    "arquivoGPX": "gpx/04.gpx",
+    "arquivoGPX": "04",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -42,7 +42,7 @@ export const LINHAS: Linha[] = [
     "nome": "AVIÃO CAIDO",
     "motorista": "DENNIS FABRICIO DA SILVA FERRON",
     "telefone": "6596009031",
-    "arquivoGPX": "gpx/05.gpx",
+    "arquivoGPX": "05",
     "nucleoId": 13,
     "turno": "MATUTINO"
   },
@@ -51,7 +51,7 @@ export const LINHAS: Linha[] = [
     "nome": "BAIA BELA",
     "motorista": "MARCO ANTONIO DO NASCIMENTO",
     "telefone": "6599606859",
-    "arquivoGPX": "gpx/06.gpx",
+    "arquivoGPX": "06",
     "nucleoId": 9,
     "turno": "MATUTINO"
   },
@@ -60,7 +60,7 @@ export const LINHAS: Linha[] = [
     "nome": "BARRANQUEIRA 1",
     "motorista": "VANDERSON BRITO MIRANDA",
     "telefone": "6593538785",
-    "arquivoGPX": "gpx/07.gpx",
+    "arquivoGPX": "07",
     "nucleoId": 3,
     "turno": "VESPERTINO"
   },
@@ -69,7 +69,7 @@ export const LINHAS: Linha[] = [
     "nome": "BARRANQUEIRA 2",
     "motorista": "ALMERINDO DUARTE DA SILVA",
     "telefone": "6596658012",
-    "arquivoGPX": "gpx/08.gpx",
+    "arquivoGPX": "08",
     "nucleoId": 3,
     "turno": "MATUTINO"
   },
@@ -78,7 +78,7 @@ export const LINHAS: Linha[] = [
     "nome": "BARREIRO PRETO",
     "motorista": "ADEMILCO SOUZA MILAS",
     "telefone": "65999777697",
-    "arquivoGPX": "gpx/09.gpx",
+    "arquivoGPX": "09",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -87,7 +87,7 @@ export const LINHAS: Linha[] = [
     "nome": "BOA ESPERANÇA/SÃO JOSE/BOM JARDIM",
     "motorista": "ODAIR CAMACHO DE SOUZA",
     "telefone": "65996362859",
-    "arquivoGPX": "gpx/10.gpx",
+    "arquivoGPX": "10",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -96,7 +96,7 @@ export const LINHAS: Linha[] = [
     "nome": "BOCAINA DO CASCAVEL",
     "motorista": "ALOISIO DA CONCEICAO LOPES MARTINS VIANA",
     "telefone": "6599652410",
-    "arquivoGPX": "gpx/11.gpx",
+    "arquivoGPX": "11",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -105,7 +105,7 @@ export const LINHAS: Linha[] = [
     "nome": "BOM JARDIM/BR",
     "motorista": "JOILSON FELIX MACEDO",
     "telefone": "65999460417",
-    "arquivoGPX": "gpx/12.gpx",
+    "arquivoGPX": "12",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -114,7 +114,7 @@ export const LINHAS: Linha[] = [
     "nome": "BR/PAIOL",
     "motorista": "ELTON DOS SANTOS",
     "telefone": "6584531069",
-    "arquivoGPX": "gpx/13.gpx",
+    "arquivoGPX": "13",
     "nucleoId": 8,
     "turno": "MATUTINO"
   },
@@ -123,7 +123,7 @@ export const LINHAS: Linha[] = [
     "nome": "BR/PAIOL",
     "motorista": "ELTON DOS SANTOS",
     "telefone": "6584531069",
-    "arquivoGPX": "gpx/14.gpx",
+    "arquivoGPX": "14",
     "nucleoId": 8,
     "turno": "VESPERTINO"
   },
@@ -132,7 +132,7 @@ export const LINHAS: Linha[] = [
     "nome": "CAIÇARA/LIMÃO",
     "motorista": "ELYSSON VIDAL GUILHER",
     "telefone": "65984197041",
-    "arquivoGPX": "gpx/15.gpx",
+    "arquivoGPX": "15",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -141,7 +141,7 @@ export const LINHAS: Linha[] = [
     "nome": "CAIÇARA/MINUANO/ROTA DAS AGUAS",
     "motorista": "ALISON RIBEIRO FELIX",
     "telefone": "65996090109",
-    "arquivoGPX": "gpx/16.gpx",
+    "arquivoGPX": "16",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -150,7 +150,7 @@ export const LINHAS: Linha[] = [
     "nome": "CAMPARINO/PORTO",
     "motorista": "JACKSON FORNAZARI DO NASCIMENTO",
     "telefone": "6596729185",
-    "arquivoGPX": "gpx/17.gpx",
+    "arquivoGPX": "17",
     "nucleoId": 13,
     "turno": "MATUTINO"
   },
@@ -159,7 +159,7 @@ export const LINHAS: Linha[] = [
     "nome": "CINTURÃO VERDE/FACÃO",
     "motorista": "EDUARDO DE ALMEIDA CARLINO",
     "telefone": "65999559699",
-    "arquivoGPX": "gpx/18.gpx",
+    "arquivoGPX": "18",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -168,7 +168,7 @@ export const LINHAS: Linha[] = [
     "nome": "CINTURÃO VERDE/FACÃO",
     "motorista": "JOSE AUGUSTO DA SILVA CRUZ",
     "telefone": "659997775657",
-    "arquivoGPX": "gpx/19.gpx",
+    "arquivoGPX": "19",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -177,7 +177,7 @@ export const LINHAS: Linha[] = [
     "nome": "CORIXA",
     "motorista": "AIRTON LOURENÇO SALVIANI",
     "telefone": "6596741986",
-    "arquivoGPX": "gpx/20.gpx",
+    "arquivoGPX": "20",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -186,7 +186,7 @@ export const LINHAS: Linha[] = [
     "nome": "CORIXINHA/SAPIQUÁ",
     "motorista": "RENATO ANTONIO VIANA",
     "telefone": "6599629113",
-    "arquivoGPX": "gpx/21.gpx",
+    "arquivoGPX": "21",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -195,7 +195,7 @@ export const LINHAS: Linha[] = [
     "nome": "DOIS DE OURO/AFFEMAT",
     "motorista": "LUIZ ORLEI AGUIAR",
     "telefone": "65999649434",
-    "arquivoGPX": "gpx/22.gpx",
+    "arquivoGPX": "22",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -204,7 +204,7 @@ export const LINHAS: Linha[] = [
     "nome": "ENCANTO/CORIXA",
     "motorista": "ROMARIO DA SILVA FREIRES",
     "telefone": "6599543256",
-    "arquivoGPX": "gpx/23.gpx",
+    "arquivoGPX": "23",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -213,7 +213,7 @@ export const LINHAS: Linha[] = [
     "nome": "ENCANTO/IPANEMA",
     "motorista": "NATANAEL ALVES DA SILVA",
     "telefone": "65999362463",
-    "arquivoGPX": "gpx/24.gpx",
+    "arquivoGPX": "24",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -222,7 +222,7 @@ export const LINHAS: Linha[] = [
     "nome": "FAZENDA BAÚ",
     "motorista": "SEBASTIÃO RAMOS OLIVEIRA",
     "telefone": "65999147203",
-    "arquivoGPX": "gpx/25.gpx",
+    "arquivoGPX": "25",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -231,7 +231,7 @@ export const LINHAS: Linha[] = [
     "nome": "FAZENDA DREBOR/SANTA MARCIA/LIMOEIRO",
     "motorista": "REINALDO TEIXEIRA SILVA",
     "telefone": "6596411570",
-    "arquivoGPX": "gpx/26.gpx",
+    "arquivoGPX": "26",
     "nucleoId": 7,
     "turno": "MATUTINO"
   },
@@ -240,7 +240,7 @@ export const LINHAS: Linha[] = [
     "nome": "FAZENDA DREBOR/SANTA MARCIA/LIMOEIRO",
     "motorista": "REINALDO TEIXEIRA SILVA",
     "telefone": "6596411570",
-    "arquivoGPX": "gpx/27.gpx",
+    "arquivoGPX": "27",
     "nucleoId": 7,
     "turno": "VESPERTINO"
   },
@@ -249,7 +249,7 @@ export const LINHAS: Linha[] = [
     "nome": "FAZENDA OURO VERDE/ ZÉ DO OLEO",
     "motorista": "JESUS VALDECI FRANCO RODRIGUES",
     "telefone": "6599417125",
-    "arquivoGPX": "gpx/28.gpx",
+    "arquivoGPX": "28",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -258,7 +258,7 @@ export const LINHAS: Linha[] = [
     "nome": "FLOR DA MATA",
     "motorista": "EDISON EGUES",
     "telefone": "6596427778",
-    "arquivoGPX": "gpx/29.gpx",
+    "arquivoGPX": "29",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -267,7 +267,7 @@ export const LINHAS: Linha[] = [
     "nome": "IPÊ ROXO/7 LOTES/ LARANJEIRA 1",
     "motorista": "CLAUDINEI ANACLETO DA SILVA",
     "telefone": "6598014528",
-    "arquivoGPX": "gpx/30.gpx",
+    "arquivoGPX": "30",
     "nucleoId": 5,
     "turno": "MATUTINO"
   },
@@ -276,7 +276,7 @@ export const LINHAS: Linha[] = [
     "nome": "IPÊ ROXO/7 LOTES/ LARANJEIRA 1",
     "motorista": "CLAUDINEI ANACLETO DA SILVA",
     "telefone": "6598014528",
-    "arquivoGPX": "gpx/31.gpx",
+    "arquivoGPX": "31",
     "nucleoId": 5,
     "turno": "VESPERTINO"
   },
@@ -285,7 +285,7 @@ export const LINHAS: Linha[] = [
     "nome": "ITIQUIRA/CARAMUJO/SALVAÇÃO",
     "motorista": "EDILSON DA CRUZ",
     "telefone": "6599009996",
-    "arquivoGPX": "gpx/32.gpx",
+    "arquivoGPX": "32",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -294,7 +294,7 @@ export const LINHAS: Linha[] = [
     "nome": "JARDIM AEROPORTO",
     "motorista": "RONY OLIVEIRA QUEROZ",
     "telefone": "65998024770",
-    "arquivoGPX": "gpx/33.gpx",
+    "arquivoGPX": "33",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -303,7 +303,7 @@ export const LINHAS: Linha[] = [
     "nome": "JARDIM AEROPORTO",
     "motorista": "RONY OLIVEIRA QUEROZ",
     "telefone": "65998024770",
-    "arquivoGPX": "gpx/34.gpx",
+    "arquivoGPX": "34",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -312,7 +312,7 @@ export const LINHAS: Linha[] = [
     "nome": "KATIRA/JATOBA/BOA ESPERANÇA",
     "motorista": "JOSE LEANDRO NUNES",
     "telefone": "6598019996",
-    "arquivoGPX": "gpx/35.gpx",
+    "arquivoGPX": "35",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -321,7 +321,7 @@ export const LINHAS: Linha[] = [
     "nome": "LARANJEIRA/ FEIJÃO/ VIDA NOVA",
     "motorista": "JOSE ROBERTO DE MIRANDA",
     "telefone": "6596850924",
-    "arquivoGPX": "gpx/36.gpx",
+    "arquivoGPX": "36",
     "nucleoId": 5,
     "turno": "MATUTINO"
   },
@@ -330,7 +330,7 @@ export const LINHAS: Linha[] = [
     "nome": "LARANJEIRA/ FEIJÃO/ VIDA NOVA",
     "motorista": "JOSE ROBERTO DE MIRANDA",
     "telefone": "6596850924",
-    "arquivoGPX": "gpx/37.gpx",
+    "arquivoGPX": "37",
     "nucleoId": 5,
     "turno": "VESPERTINO"
   },
@@ -339,7 +339,7 @@ export const LINHAS: Linha[] = [
     "nome": "LINHÃO 1 E 4 (ESQUERDO)",
     "motorista": "WALLACE MORAES DA SILVA",
     "telefone": "6596186881",
-    "arquivoGPX": "gpx/38.gpx",
+    "arquivoGPX": "38",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -348,7 +348,7 @@ export const LINHAS: Linha[] = [
     "nome": "LINHÃO 1 E 4 (ESQUERDO)",
     "motorista": "WALLACE MORAES DA SILVA",
     "telefone": "6596186881",
-    "arquivoGPX": "gpx/39.gpx",
+    "arquivoGPX": "39",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -357,7 +357,7 @@ export const LINHAS: Linha[] = [
     "nome": "LINHÃO DAS BRANCAS",
     "motorista": "HENRIQUE RODRGUES LARANJEIRA",
     "telefone": "6599576772",
-    "arquivoGPX": "gpx/40.gpx",
+    "arquivoGPX": "40",
     "nucleoId": 8,
     "turno": "MATUTINO"
   },
@@ -366,7 +366,7 @@ export const LINHAS: Linha[] = [
     "nome": "LINHÃO DAS BRANCAS",
     "motorista": "HENRIQUE RODRGUES LARANJEIRA",
     "telefone": "6599576772",
-    "arquivoGPX": "gpx/41.gpx",
+    "arquivoGPX": "41",
     "nucleoId": 8,
     "turno": "VESPERTINO"
   },
@@ -375,7 +375,7 @@ export const LINHAS: Linha[] = [
     "nome": "MARGARIDA ALVES/BOA ESPERANÇA",
     "motorista": "EDER FERREIRA",
     "telefone": "6599110415",
-    "arquivoGPX": "gpx/42.gpx",
+    "arquivoGPX": "42",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -384,7 +384,7 @@ export const LINHAS: Linha[] = [
     "nome": "MONJOLO/LAGOA/RESERVA",
     "motorista": "SIVANILDO CIRIACO SANTANA",
     "telefone": "6596780791",
-    "arquivoGPX": "gpx/43.gpx",
+    "arquivoGPX": "43",
     "nucleoId": 8,
     "turno": "MATUTINO"
   },
@@ -393,7 +393,7 @@ export const LINHAS: Linha[] = [
     "nome": "MONJOLO/LAGOA/RESERVA",
     "motorista": "SIVANILDO CIRIACO SANTANA",
     "telefone": "6596780791",
-    "arquivoGPX": "gpx/44.gpx",
+    "arquivoGPX": "44",
     "nucleoId": 8,
     "turno": "VESPERTINO"
   },
@@ -402,7 +402,7 @@ export const LINHAS: Linha[] = [
     "nome": "MT 343/ GUARANDI",
     "motorista": "RENATO SEBASTIÃO DE SOUZA",
     "telefone": "6596164969",
-    "arquivoGPX": "gpx/45.gpx",
+    "arquivoGPX": "45",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -411,7 +411,7 @@ export const LINHAS: Linha[] = [
     "nome": "NOVA LIMEIRA/CACIMBA",
     "motorista": "JOSE ANTONIO EVANGELISTA",
     "telefone": "6599999303",
-    "arquivoGPX": "gpx/46.gpx",
+    "arquivoGPX": "46",
     "nucleoId": 4,
     "turno": "MATUTINO"
   },
@@ -420,7 +420,7 @@ export const LINHAS: Linha[] = [
     "nome": "NOVA LIMEIRA/CACIMBA",
     "motorista": "JOSE ANTONIO EVANGELISTA",
     "telefone": "6599999303",
-    "arquivoGPX": "gpx/47.gpx",
+    "arquivoGPX": "47",
     "nucleoId": 4,
     "turno": "VESPERTINO"
   },
@@ -429,7 +429,7 @@ export const LINHAS: Linha[] = [
     "nome": "NOVAS FLECHAS",
     "motorista": "SIDNEI ADÃO DE CAMPOS",
     "telefone": "6599053400",
-    "arquivoGPX": "gpx/48.gpx",
+    "arquivoGPX": "48",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -438,7 +438,7 @@ export const LINHAS: Linha[] = [
     "nome": "NOVAS FLECHAS",
     "motorista": "SIDNEI ADÃO DE CAMPOS",
     "telefone": "6599053400",
-    "arquivoGPX": "gpx/49.gpx",
+    "arquivoGPX": "49",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -447,7 +447,7 @@ export const LINHAS: Linha[] = [
     "nome": "PADRE INACIO",
     "motorista": "SAVIO DA SILVA CEBALHO",
     "telefone": "6599712916",
-    "arquivoGPX": "gpx/50.gpx",
+    "arquivoGPX": "50",
     "nucleoId": 4,
     "turno": "MATUTINO"
   },
@@ -456,7 +456,7 @@ export const LINHAS: Linha[] = [
     "nome": "PADRE INACIO",
     "motorista": "SAVIO DA SILVA CEBALHO",
     "telefone": "6599712916",
-    "arquivoGPX": "gpx/51.gpx",
+    "arquivoGPX": "51",
     "nucleoId": 4,
     "turno": "VESPERTINO"
   },
@@ -465,7 +465,7 @@ export const LINHAS: Linha[] = [
     "nome": "PANTANAL/ANGICO",
     "motorista": "MARIONEY LOURENÇO PATRICIO DA SILVA",
     "telefone": "6599611810",
-    "arquivoGPX": "gpx/52.gpx",
+    "arquivoGPX": "52",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -474,7 +474,7 @@ export const LINHAS: Linha[] = [
     "nome": "PEDREIRA/MATADOURO/CASCALHEIRA",
     "motorista": "GENILDO DA SILVA",
     "telefone": "659963607189",
-    "arquivoGPX": "gpx/53.gpx",
+    "arquivoGPX": "53",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -483,7 +483,7 @@ export const LINHAS: Linha[] = [
     "nome": "PIUVAL/BARREIRO/ SÃO FRANCISCO",
     "motorista": "MARIO CAMPOS DA SILVA",
     "telefone": "6598112336",
-    "arquivoGPX": "gpx/54.gpx",
+    "arquivoGPX": "54",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -492,7 +492,7 @@ export const LINHAS: Linha[] = [
     "nome": "PONTA DO MORRO/BOM TEMPO",
     "motorista": "FRANCISCO FERREIRA LIMA FILHO",
     "telefone": "65999695040",
-    "arquivoGPX": "gpx/55.gpx",
+    "arquivoGPX": "55",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -501,7 +501,7 @@ export const LINHAS: Linha[] = [
     "nome": "QUATRO BOCAS",
     "motorista": "SEBASTIÃO MARTINS NERES",
     "telefone": "6596140062",
-    "arquivoGPX": "gpx/56.gpx",
+    "arquivoGPX": "56",
     "nucleoId": 4,
     "turno": "MATUTINO"
   },
@@ -510,7 +510,7 @@ export const LINHAS: Linha[] = [
     "nome": "QUATRO BOCAS",
     "motorista": "SEBASTIÃO MARTINS NERES",
     "telefone": "6596140062",
-    "arquivoGPX": "gpx/57.gpx",
+    "arquivoGPX": "57",
     "nucleoId": 4,
     "turno": "VESPERTINO"
   },
@@ -519,7 +519,7 @@ export const LINHAS: Linha[] = [
     "nome": "RANCHO SAPIQUÁ",
     "motorista": "ROBSON FRANCISCO BORGES",
     "telefone": "6599487537",
-    "arquivoGPX": "gpx/58.gpx",
+    "arquivoGPX": "58",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -528,7 +528,7 @@ export const LINHAS: Linha[] = [
     "nome": "RIO CACHOEIRA/ PINDAIVAL",
     "motorista": "GONÇALO DA COSTA VILANOVA",
     "telefone": "6599964238",
-    "arquivoGPX": "gpx/59.gpx",
+    "arquivoGPX": "59",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -537,7 +537,7 @@ export const LINHAS: Linha[] = [
     "nome": "RIO/FAZ.FEMA/ LIMOEIRO",
     "motorista": "LUIZ CARLOS RIBEIRO RAMOS",
     "telefone": "6599169491",
-    "arquivoGPX": "gpx/60.gpx",
+    "arquivoGPX": "60",
     "nucleoId": 7,
     "turno": "MATUTINO"
   },
@@ -546,7 +546,7 @@ export const LINHAS: Linha[] = [
     "nome": "RIO/FAZ.FEMA/ LIMOEIRO",
     "motorista": "LUIZ CARLOS RIBEIRO RAMOS",
     "telefone": "6599169491",
-    "arquivoGPX": "gpx/61.gpx",
+    "arquivoGPX": "61",
     "nucleoId": 7,
     "turno": "VESPERTINO"
   },
@@ -555,7 +555,7 @@ export const LINHAS: Linha[] = [
     "nome": "ROTA PCD",
     "motorista": "WAGNER RODRIGUES DE SOUZA",
     "telefone": "65999474152",
-    "arquivoGPX": "gpx/62.gpx",
+    "arquivoGPX": "62",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -564,7 +564,7 @@ export const LINHAS: Linha[] = [
     "nome": "ROTA PCD",
     "motorista": "WAGNER RODRIGUES DE SOUZA",
     "telefone": "65999474152",
-    "arquivoGPX": "gpx/63.gpx",
+    "arquivoGPX": "63",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -573,7 +573,7 @@ export const LINHAS: Linha[] = [
     "nome": "ROTA PNE",
     "motorista": "ODENIR JESUS DE PAULA",
     "telefone": "65999172749",
-    "arquivoGPX": "gpx/64.gpx",
+    "arquivoGPX": "64",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -582,7 +582,7 @@ export const LINHAS: Linha[] = [
     "nome": "ROTA PNE",
     "motorista": "ODENIR JESUS DE PAULA",
     "telefone": "65999172749",
-    "arquivoGPX": "gpx/65.gpx",
+    "arquivoGPX": "65",
     "nucleoId": 14,
     "turno": "MATUTINO"
   },
@@ -591,7 +591,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANGRADOURO/VALE VERDE /BOQUEIRÃO",
     "motorista": "DIVANEI UNIMOTO DA CRUZ",
     "telefone": "6596808617",
-    "arquivoGPX": "gpx/66.gpx",
+    "arquivoGPX": "66",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -600,7 +600,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANGRADOURO/VALE VERDE /BOQUEIRÃO",
     "motorista": "DIVANEI UNIMOTO DA CRUZ",
     "telefone": "6596808617",
-    "arquivoGPX": "gpx/67.gpx",
+    "arquivoGPX": "67",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -609,7 +609,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTA BARBARA/SANTA CRUZ",
     "motorista": "JOÃO RAMOS PIRES",
     "telefone": "65998153120",
-    "arquivoGPX": "gpx/68.gpx",
+    "arquivoGPX": "68",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -618,7 +618,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTA CRUZ/MOEDA/SANTA MARIA",
     "motorista": "MANOEL JOSE DA SILVA",
     "telefone": "65996936409",
-    "arquivoGPX": "gpx/69.gpx",
+    "arquivoGPX": "69",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -627,7 +627,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTA HELENA/FAZENDA COMETA/ALAMBRADO",
     "motorista": "JOSE LUIZ TORRES DA CUNHA",
     "telefone": "6565996395618",
-    "arquivoGPX": "gpx/70.gpx",
+    "arquivoGPX": "70",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -636,7 +636,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTA LUZIA/BARRA NOVA",
     "motorista": "RONEI DA SILVA GONÇALVES NETO",
     "telefone": "6593252392",
-    "arquivoGPX": "gpx/71.gpx",
+    "arquivoGPX": "71",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -645,7 +645,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTA RITA/SANTA MARIA",
     "motorista": "ANDRÉ LUIZ VILAS BOAS DO ESPIRITO SANTO",
     "telefone": "6598176721",
-    "arquivoGPX": "gpx/72.gpx",
+    "arquivoGPX": "72",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -654,7 +654,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTANA /EXU/ SÃO NICOLAU",
     "motorista": "LORIVALDO DE PAULA DE OLIVEIRA",
     "telefone": "6598000488",
-    "arquivoGPX": "gpx/73.gpx",
+    "arquivoGPX": "73",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -663,7 +663,7 @@ export const LINHAS: Linha[] = [
     "nome": "SANTO ANTONIO DAS LENDAS/BARRANCO VERMELHO",
     "motorista": "SIDNEI CEBALHO BARONCIELO",
     "telefone": "659934407953",
-    "arquivoGPX": "gpx/74.gpx",
+    "arquivoGPX": "74",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -672,7 +672,7 @@ export const LINHAS: Linha[] = [
     "nome": "SÃO GERALDO/PÉ DE ANTA/SÃO FRANCISCO",
     "motorista": "ODILIO PEREIRA DE LIMA",
     "telefone": "6596055309",
-    "arquivoGPX": "gpx/75.gpx",
+    "arquivoGPX": "75",
     "nucleoId": 2,
     "turno": "VESPERTINO"
   },
@@ -681,7 +681,7 @@ export const LINHAS: Linha[] = [
     "nome": "SEPUTUBA/PANAMBI/ ARAÇATUBA",
     "motorista": "JERSON MENDES DE CARVALHO",
     "telefone": "6598444160",
-    "arquivoGPX": "gpx/76.gpx",
+    "arquivoGPX": "76",
     "nucleoId": 13,
     "turno": "MATUTINO"
   },
@@ -690,7 +690,7 @@ export const LINHAS: Linha[] = [
     "nome": "SEPUTUBINHA/ BARRANQUINHO",
     "motorista": "JOÃO FELIPE DA MATA",
     "telefone": "6599357420",
-    "arquivoGPX": "gpx/77.gpx",
+    "arquivoGPX": "77",
     "nucleoId": 15,
     "turno": "VESPERTINO"
   },
@@ -699,7 +699,7 @@ export const LINHAS: Linha[] = [
     "nome": "SOJA",
     "motorista": "JOEL CAVALCANTI DE ALMEIDA",
     "telefone": "6599485799",
-    "arquivoGPX": "gpx/78.gpx",
+    "arquivoGPX": "78",
     "nucleoId": 9,
     "turno": "MATUTINO"
   },
@@ -708,7 +708,7 @@ export const LINHAS: Linha[] = [
     "nome": "TAQUARAL/PERAPUTANGA/PONTA DO MORRO",
     "motorista": "LAURILEU LUIZ DA SILVA JUNIOR",
     "telefone": "65996659133",
-    "arquivoGPX": "gpx/79.gpx",
+    "arquivoGPX": "79",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -717,7 +717,7 @@ export const LINHAS: Linha[] = [
     "nome": "TARUMÃ/PEDRAS",
     "motorista": "DOUGLAS CAMARGO",
     "telefone": "65998067902",
-    "arquivoGPX": "gpx/80.gpx",
+    "arquivoGPX": "80",
     "nucleoId": 14,
     "turno": "VESPERTINO"
   },
@@ -726,7 +726,7 @@ export const LINHAS: Linha[] = [
     "nome": "TREMEDAL/CORIXA",
     "motorista": "DANIELI LOURENÇO SALVIANI",
     "telefone": "6599347834",
-    "arquivoGPX": "gpx/81.gpx",
+    "arquivoGPX": "81",
     "nucleoId": 12,
     "turno": "MATUTINO"
   },
@@ -735,7 +735,7 @@ export const LINHAS: Linha[] = [
     "nome": "TRÊS RIOS",
     "motorista": "RENATO TORRES CUNHA",
     "telefone": "65996436868",
-    "arquivoGPX": "gpx/82.gpx",
+    "arquivoGPX": "82",
     "nucleoId": 6,
     "turno": "MATUTINO"
   },
@@ -744,7 +744,7 @@ export const LINHAS: Linha[] = [
     "nome": "UNIÃO/TRABALHO/ LINHÃO 2,3,5",
     "motorista": "PAULO CESAR DA SILVA MACHADO",
     "telefone": "6599427381",
-    "arquivoGPX": "gpx/83.gpx",
+    "arquivoGPX": "83",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -753,7 +753,7 @@ export const LINHAS: Linha[] = [
     "nome": "UNIÃO/TRABALHO/ LINHÃO 2,3,5",
     "motorista": "PAULO CESAR DA SILVA MACHADO",
     "telefone": "6599427381",
-    "arquivoGPX": "gpx/84.gpx",
+    "arquivoGPX": "84",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -762,7 +762,7 @@ export const LINHAS: Linha[] = [
     "nome": "VALE AZUL/ TEXEIRINHA",
     "motorista": "FRANCISLAINE DOS SANTOS",
     "telefone": "6599561461",
-    "arquivoGPX": "gpx/85.gpx",
+    "arquivoGPX": "85",
     "nucleoId": 11,
     "turno": "MATUTINO"
   },
@@ -771,7 +771,7 @@ export const LINHAS: Linha[] = [
     "nome": "VALE AZUL/ TEXEIRINHA",
     "motorista": "FRANCISLAINE DOS SANTOS",
     "telefone": "6599561461",
-    "arquivoGPX": "gpx/86.gpx",
+    "arquivoGPX": "86",
     "nucleoId": 11,
     "turno": "VESPERTINO"
   },
@@ -780,7 +780,7 @@ export const LINHAS: Linha[] = [
     "nome": "VALE DO MANGAVAL",
     "motorista": "CESAR OLIVEIRA QUEROZ",
     "telefone": "6584619301",
-    "arquivoGPX": "gpx/87.gpx",
+    "arquivoGPX": "87",
     "nucleoId": 8,
     "turno": "MATUTINO"
   },
@@ -789,7 +789,7 @@ export const LINHAS: Linha[] = [
     "nome": "VALE DO MANGAVAL",
     "motorista": "CESAR OLIVEIRA QUEROZ",
     "telefone": "6584619301",
-    "arquivoGPX": "gpx/88.gpx",
+    "arquivoGPX": "88",
     "nucleoId": 8,
     "turno": "VESPERTINO"
   },
@@ -798,7 +798,7 @@ export const LINHAS: Linha[] = [
     "nome": "VIDA NOVA/ LARANJEIRA / FURNAS",
     "motorista": "ADEMAR CARVALHO SILVA",
     "telefone": "6599485799",
-    "arquivoGPX": "gpx/89.gpx",
+    "arquivoGPX": "89",
     "nucleoId": 5,
     "turno": "MATUTINO"
   },
@@ -807,7 +807,7 @@ export const LINHAS: Linha[] = [
     "nome": "VIDA NOVA/ LARANJEIRA / FURNAS",
     "motorista": "ADEMAR CARVALHO SILVA",
     "telefone": "6599485799",
-    "arquivoGPX": "gpx/90.gpx",
+    "arquivoGPX": "90",
     "nucleoId": 5,
     "turno": "VESPERTINO"
   }

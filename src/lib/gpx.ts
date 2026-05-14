@@ -20,15 +20,30 @@ export function distanciaMetros(
 }
 
 const gpxCache: Record<number, { lat: number; lng: number }[]> = {};
+let gpxMapCache: Record<number, string> | null = null;
+
+async function getGpxUrl(linhaId: number): Promise<string | null> {
+  if (gpxMapCache === null) {
+    try {
+      const res = await fetch("/api/gpx-map");
+      gpxMapCache = await res.json();
+    } catch {
+      gpxMapCache = {};
+    }
+  }
+  return gpxMapCache![linhaId] ?? null;
+}
 
 export async function carregarGPX(
   url: string,
   linhaId: number,
 ): Promise<{ lat: number; lng: number }[]> {
-  if (!url) return [];
+  if (!url && !linhaId) return [];
   if (gpxCache[linhaId]) return gpxCache[linhaId];
+  const resolvedUrl = (await getGpxUrl(linhaId)) || url;
+  if (!resolvedUrl) return [];
   try {
-    const response = await fetch(url);
+    const response = await fetch(resolvedUrl);
     const texto = await response.text();
     const parser = new DOMParser();
     const xml = parser.parseFromString(texto, "text/xml");
