@@ -1,687 +1,380 @@
-import { Escola } from "@/types/cadastro";
+// GENERATED FROM src/docs/DADOS CARCERES-v2.xlsx
+import { Escola } from "@/types/cadastro"
 
 export const ESCOLAS: Escola[] = [
-  {
-    "id": 1,
-    "nome": "E. E. C. M. Frei Ambrósio",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 2,
-    "nome": "E. E. C. M. Profª Ana Maria G. Noronha",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 3,
-    "nome": "E. E. C. M. Senador Mário Motta",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 4,
-    "nome": "E. E. EDIEB – Prof. Miltom Marques Curvo",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO",
-      "EJA I - FUNDAMENTAL",
-      "EJA II - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 5,
-    "nome": "E. E. M. Tiradentes Prof. Natalino F. Mendes",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 6,
-    "nome": "E. E. Prof. Demétrio Costa Pereira",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 7,
-    "nome": "E.E 12 DE OUTUBRO ANEXA CLARINOPOLIS",
-    "nucleoId": 3,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 8,
-    "nome": "E.E 12 DE OUTUBRO ANEXA SAPIQUÁ",
-    "nucleoId": 12,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 9,
-    "nome": "E.E 12 DE OUTUBRO ANEXA SOTECO",
-    "nucleoId": 13,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 10,
-    "nome": "E.E 12 DE OUTUBRO LIMÃO",
-    "nucleoId": 6,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 11,
-    "nome": "E.E COLEGIO ESTADUAL ONZE DE MARÇO ( CEOM )",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 12,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO ANEXA BURITI",
-    "nucleoId": 15,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 13,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO ANEXA HORIZONTE D'OESTE",
-    "nucleoId": 4,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 14,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO ANEXA LARANJEIRA",
-    "nucleoId": 5,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 15,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO ANEXA PAIOL",
-    "nucleoId": 8,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 16,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO ANEXA SADIA",
-    "nucleoId": 11,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 17,
-    "nome": "E.E JOÃO FLORENTINO SILVA NETO CARAMUJO",
-    "nucleoId": 2,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 18,
-    "nome": "E.E SÃO LUIZ",
-    "nucleoId": 14,
-    "etapas": [
-      "6º ANO - FUNDAMENTAL",
-      "7º ANO - FUNDAMENTAL",
-      "8º ANO - FUNDAMENTAL",
-      "9º ANO - FUNDAMENTAL",
-      "1º ANO - ENSINO MÉDIO",
-      "2º ANO - ENSINO MÉDIO",
-      "3º ANO - ENSINO MÉDIO"
-    ]
-  },
-  {
-    "id": 19,
-    "nome": "EM 16 DE MARÇO",
-    "nucleoId": 11,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 20,
-    "nome": "EM BURITI",
-    "nucleoId": 15,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 21,
-    "nome": "EM CAIC",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  },
-  {
-    "id": 22,
-    "nome": "EM CENTRO EDUCACIONAL DOM MAXIMO BIENNES",
-    "nucleoId": 14,
-    "etapas": [
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 23,
-    "nome": "EM CLARINÓPOLIS",
-    "nucleoId": 3,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 24,
-    "nome": "EM DESEMBARGADOR GABRIEL PINTO DE ARRUDA",
-    "nucleoId": 14,
-    "etapas": [
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 25,
-    "nome": "EM DR. JOSE RODRIGUES FONTES",
-    "nucleoId": 14,
-    "etapas": [
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 26,
-    "nome": "EM DUQUE DE CAXIAS",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 27,
-    "nome": "EM GARCES",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  },
-  {
-    "id": 28,
-    "nome": "EM JARDIM PARAISO",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 29,
-    "nome": "EM LARANJEIRA I",
-    "nucleoId": 5,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 30,
-    "nome": "EM LIMOEIRO",
-    "nucleoId": 7,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 31,
-    "nome": "EM NOSSA SENHORA APARECIDA",
-    "nucleoId": 12,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 32,
-    "nome": "EM NOVO ORIENTE",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 33,
-    "nome": "EM PAULO FREIRE",
-    "nucleoId": 8,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 34,
-    "nome": "EM PEQUENO SABIO",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  },
-  {
-    "id": 35,
-    "nome": "EM PROFª ERENICE SIMAO ALVARENGA",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 36,
-    "nome": "EM PROFª ISABEL CAMPOS",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 37,
-    "nome": "EM RAQUEL RAMAO DA SILVA",
-    "nucleoId": 14,
-    "etapas": [
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 38,
-    "nome": "EM ROCA VELHA",
-    "nucleoId": 9,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 39,
-    "nome": "EM SANTA CATARINA",
-    "nucleoId": 6,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 40,
-    "nome": "EM SANTO ANTONIO DO CARAMUJO",
-    "nucleoId": 2,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 41,
-    "nome": "EM SANTOS DUMONT",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 42,
-    "nome": "EM SOTECO",
-    "nucleoId": 13,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 43,
-    "nome": "EM TANCREDO NEVES",
-    "nucleoId": 14,
-    "etapas": [
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 44,
-    "nome": "EM UNIAO",
-    "nucleoId": 4,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 45,
-    "nome": "EM VILA IRENE",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 46,
-    "nome": "EM VILA REAL",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 47,
-    "nome": "EM VITORIA REGIA",
-    "nucleoId": 14,
-    "etapas": [
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL",
-      "1º ANO - FUNDAMENTAL",
-      "2º ANO - FUNDAMENTAL",
-      "3º ANO - FUNDAMENTAL",
-      "4º ANO - FUNDAMENTAL",
-      "5º ANO - FUNDAMENTAL"
-    ]
-  },
-  {
-    "id": 48,
-    "nome": "EMEI BRINCANDO E APRENDENDO",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  },
-  {
-    "id": 49,
-    "nome": "EMEI BUSCANDO O SABER",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  },
-  {
-    "id": 50,
-    "nome": "EMEI FREI GRIGNION",
-    "nucleoId": 14,
-    "etapas": [
-      "CRECHE I - EDUCAÇÃO INFANTIL",
-      "CRECHE II - EDUCAÇÃO INFANTIL",
-      "PRE I - EDUCAÇÃO INFANTIL",
-      "PRE II - EDUCAÇÃO INFANTIL"
-    ]
-  }
+{
+    id: 1,
+    nome: "EM CENTRO EDUCACIONAL DOM MAXIMO BIENNES",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "8", "72", "76"],
+},
+{
+    id: 2,
+    nome: "EM LARANJEIRA I",
+    nucleoId: 4,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["1", "2", "16", "17", "47", "48"],
+},
+{
+    id: 3,
+    nome: "EM NOVO ORIENTE",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "9", "14", "23", "32", "61", "68"],
+},
+{
+    id: 4,
+    nome: "EM PROFA ERENICE SIMAO ALVARENGA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["8", "32", "61"],
+},
+{
+    id: 5,
+    nome: "EM VITORIA REGIA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "9", "14", "15", "23", "32", "61", "68", "76"],
+},
+{
+    id: 6,
+    nome: "EMEI BUSCANDO O SABER",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["11", "76"],
+},
+{
+    id: 7,
+    nome: "E E C M FREI AMBROSIO",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["9", "23", "32", "68", "69"],
+},
+{
+    id: 8,
+    nome: "E E C M PROFA ANA MARIA G NORONHA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["39", "40", "60", "70", "71", "86"],
+},
+{
+    id: 9,
+    nome: "E E C M SENADOR MARIO MOTTA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["9", "11", "14", "15", "23", "68", "69", "72"],
+},
+{
+    id: 10,
+    nome: "E E EDIEB  PROF MILTOM MARQUES CURVO",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["11", "23", "68", "71", "72"],
+},
+{
+    id: 11,
+    nome: "E E M TIRADENTES PROF NATALINO F MENDES",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "8", "9", "61", "69", "86"],
+},
+{
+    id: 12,
+    nome: "E E PROF DEMETRIO COSTA PEREIRA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["8", "60", "69", "70", "85"],
+},
+{
+    id: 13,
+    nome: "EE 12 DE OUTUBRO ANEXA CLARINOPOLIS",
+    nucleoId: 2,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["3", "4", "49", "89"],
+},
+{
+    id: 14,
+    nome: "EE 12 DE OUTUBRO ANEXA ROCA VELHA",
+    nucleoId: 8,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["44", "54"],
+},
+{
+    id: 15,
+    nome: "EE 12 DE OUTUBRO ANEXA SAPIQUA",
+    nucleoId: 11,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["18", "19", "50", "57", "62", "66", "87"],
+},
+{
+    id: 16,
+    nome: "EE 12 DE OUTUBRO ANEXA SOTECO",
+    nucleoId: 12,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["20", "38", "41"],
+},
+{
+    id: 17,
+    nome: "EE 12 DE OUTUBRO LIMAO",
+    nucleoId: 5,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["10", "31", "73", "74", "75", "88"],
+},
+{
+    id: 18,
+    nome: "EE COLEGIO ESTADUAL ONZE DE MARCO  CEOM ",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "8", "9", "11", "15", "32", "60", "61", "69", "71", "72", "76", "85", "86"],
+},
+{
+    id: 19,
+    nome: "EE JOAO FLORENTINO SILVA NETO ANEXA HORIZONTE DOESTE",
+    nucleoId: 3,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["45", "46", "77", "78", "79", "80"],
+},
+{
+    id: 20,
+    nome: "EE JOAO FLORENTINO SILVA NETO ANEXA LARANJEIRA",
+    nucleoId: 4,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["1", "2", "16", "17", "47", "48"],
+},
+{
+    id: 21,
+    nome: "EE JOAO FLORENTINO SILVA NETO ANEXA PAIOL",
+    nucleoId: 7,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["12", "13", "29", "30", "36", "37", "83", "84"],
+},
+{
+    id: 22,
+    nome: "EE JOAO FLORENTINO SILVA NETO ANEXA SADIA",
+    nucleoId: 10,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["21", "22", "25", "26", "33", "34", "58", "59", "81", "82", "90", "91"],
+},
+{
+    id: 23,
+    nome: "EE JOAO FLORENTINO SILVA NETO ANEXA VILA APARECIDA",
+    nucleoId: 14,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["5", "28", "35", "42", "43", "51", "65"],
+},
+{
+    id: 24,
+    nome: "EE JOAO FLORENTINO SILVA NETO CARAMUJO",
+    nucleoId: 1,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["6", "24", "27", "55", "56", "67"],
+},
+{
+    id: 25,
+    nome: "EE SAO LUIZ",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "8", "9", "11", "14", "23", "32", "60", "61", "68", "69", "72", "76", "85"],
+},
+{
+    id: 26,
+    nome: "EM 16 DE MARCO",
+    nucleoId: 9,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["21", "22", "25", "26", "33", "34", "58", "59", "81", "82", "90", "91"],
+},
+{
+    id: 27,
+    nome: "EM BURITI",
+    nucleoId: 14,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["5", "28", "35", "42", "43", "51", "65"],
+},
+{
+    id: 28,
+    nome: "EM CAIC",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["7", "8", "15", "23", "68"],
+},
+{
+    id: 29,
+    nome: "EM CLARINOPOLIS",
+    nucleoId: 2,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["3", "4", "49", "89"],
+},
+{
+    id: 30,
+    nome: "EM DESEMBARGADOR GABRIEL PINTO DE ARRUDA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["39", "40", "60", "70", "86"],
+},
+{
+    id: 31,
+    nome: "EM DR JOSE RODRIGUES FONTES",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["8", "70", "85"],
+},
+{
+    id: 32,
+    nome: "EM DUQUE DE CAXIAS",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["72"],
+},
+{
+    id: 33,
+    nome: "EM GARCES",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: [],
+},
+{
+    id: 34,
+    nome: "EM JARDIM PARAISO",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["11"],
+},
+{
+    id: 35,
+    nome: "EM LIMOEIRO",
+    nucleoId: 6,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["52", "53", "63", "64"],
+},
+{
+    id: 36,
+    nome: "EM NOSSA SENHORA APARECIDA",
+    nucleoId: 9,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["18", "19", "50", "57", "62", "66", "87"],
+},
+{
+    id: 37,
+    nome: "EM PAULO FREIRE",
+    nucleoId: 7,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["12", "13", "29", "30", "36", "37", "83", "84"],
+},
+{
+    id: 38,
+    nome: "EM PEQUENO SABIO",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["39", "40", "60", "86"],
+},
+{
+    id: 39,
+    nome: "EM PROFA ISABEL CAMPOS",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["8", "9", "11", "15", "61", "76"],
+},
+{
+    id: 40,
+    nome: "EM RAQUEL RAMAO DA SILVA",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["11"],
+},
+{
+    id: 41,
+    nome: "EM ROCA VELHA",
+    nucleoId: 8,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["44", "54"],
+},
+{
+    id: 42,
+    nome: "EM SANTA CATARINA",
+    nucleoId: 5,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["10", "31", "73", "74", "75", "88"],
+},
+{
+    id: 43,
+    nome: "EM SANTO ANTONIO DO CARAMUJO",
+    nucleoId: 1,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["6", "24", "27", "55", "56", "67"],
+},
+{
+    id: 44,
+    nome: "EM SANTOS DUMONT",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["71", "85"],
+},
+{
+    id: 45,
+    nome: "EM SOTECO",
+    nucleoId: 12,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["20", "38", "41"],
+},
+{
+    id: 46,
+    nome: "EM TANCREDO NEVES",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["39", "40"],
+},
+{
+    id: 47,
+    nome: "EM UNIAO",
+    nucleoId: 3,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["45", "46", "77", "78", "79", "80"],
+},
+{
+    id: 48,
+    nome: "EM VILA IRENE",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["71"],
+},
+{
+    id: 49,
+    nome: "EM VILA REAL",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["23", "68"],
+},
+{
+    id: 50,
+    nome: "EMEI BRINCANDO E APRENDENDO",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["85"],
+},
+{
+    id: 51,
+    nome: "EMEI FREI GRIGNION",
+    nucleoId: 13,
+    etapas: ["CRECHE I - Educação Infantil", "CRECHE II - Educação Infantil", "PRE I - Educação Infantil", "PRE II - Educação Infantil", "1º ANO - Fundamental", "2º ANO - Fundamental", "3º ANO - Fundamental", "4º ANO - Fundamental", "5º ANO - Fundamental", "6º ANO - Fundamental", "7º ANO - Fundamental", "8º ANO - Fundamental", "9º ANO - Fundamental", "1º ANO - Ensino Médio", "2º ANO - Ensino Médio", "3º ANO - Ensino Médio", "EJA I - Fundamental", "EJA II - Ensino Médio"],
+    linhas: ["71"],
+},
+{
+    id: 52,
+    nome: "GUANABARA",
+    nucleoId: 13,
+    etapas: [],
+    linhas: ["69"],
+},
 ];
 
-export const selecionarTurmas = (escolaId: number) => {
-  return ESCOLAS.find((escola) => escola.id === escolaId)?.etapas ?? [];
-};
+export function getNomeEscola(escolaId: number | ""): string {
+    if (!escolaId) return "";
+    const escola = ESCOLAS.find((e) => e.id === escolaId);
+    return escola ? escola.nome : "";
+}
 
-export const getNomeEscola = (escolaId: number | "") => {
-  if (!escolaId) return "";
-  return ESCOLAS.find((escola) => escola.id === Number(escolaId))?.nome ?? "";
-};
+export function selecionarTurmas(escolaId: number): string[] {
+    const escola = ESCOLAS.find((e) => e.id === escolaId);
+    return escola ? escola.etapas : [];
+}

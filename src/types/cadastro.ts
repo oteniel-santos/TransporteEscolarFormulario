@@ -46,6 +46,7 @@ export type Escola = {
   nome: string;
   nucleoId: number;
   etapas: string[];
+  linhas: string[];
 };
 
 export type LinhaGPX = {

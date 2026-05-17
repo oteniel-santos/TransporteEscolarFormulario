@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { LINHAS } from "@/constants/linhas";
 import { NUCLEOS } from "@/constants/nucleos";
-import { getNomeEscola } from "@/constants/escolas";
+import { ESCOLAS, getNomeEscola } from "@/constants/escolas";
 import { carregarGPX } from "@/lib/gpx";
 import { Filho, Errors } from "@/types/cadastro";
 import { useGeolocalizacao } from "@/hooks/useGeolocalizacao";
@@ -49,11 +49,21 @@ export default function CadastroForm() {
   const linhasFiltradas = useMemo(() => {
     if (!nucleo) return [];
     let filtradas = LINHAS.filter((l) => l.nucleoId === Number(nucleo));
+    
+    // Se tiver escola selecionada, filtrar também pelas linhas da escola
+    if (filhos[0]?.escolaId) {
+      const escola = ESCOLAS.find((e) => e.id === Number(filhos[0].escolaId));
+      if (escola && escola.linhas && escola.linhas.length > 0) {
+        const linhasEscolaIds = escola.linhas.map((id) => Number(id));
+        filtradas = filtradas.filter((l) => linhasEscolaIds.includes(l.id));
+      }
+    }
+    
     if (turnoFiltro) {
       filtradas = filtradas.filter((l) => l.turno === turnoFiltro);
     }
     return filtradas;
-  }, [nucleo, turnoFiltro]);
+  }, [nucleo, turnoFiltro, filhos[0]?.escolaId]);
 
   useEffect(() => {
     if (filhos[0]?.turno) {
