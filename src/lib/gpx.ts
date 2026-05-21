@@ -22,7 +22,15 @@ export function distanciaMetros(
 const gpxCache: Record<number, { lat: number; lng: number }[]> = {};
 let gpxMapCache: Record<number, string> | null = null;
 
-async function getGpxUrl(linhaId: number): Promise<string | null> {
+function parseShortGpxName(arquivoGPX: string): number | null {
+  const match = arquivoGPX.match(/^(\d{1,2})\.gpx$/);
+  return match ? parseInt(match[1], 10) : null;
+}
+
+async function getGpxUrl(
+  linhaId: number,
+  arquivoGPX?: string,
+): Promise<string | null> {
   if (gpxMapCache === null) {
     try {
       const res = await fetch("/api/gpx-map");
@@ -31,7 +39,18 @@ async function getGpxUrl(linhaId: number): Promise<string | null> {
       gpxMapCache = {};
     }
   }
-  return gpxMapCache![linhaId] ?? null;
+
+  const urlFromId = gpxMapCache![linhaId];
+  if (urlFromId) return urlFromId;
+
+  if (arquivoGPX) {
+    const shortId = parseShortGpxName(arquivoGPX);
+    if (shortId !== null) {
+      return gpxMapCache![shortId] ?? null;
+    }
+  }
+
+  return null;
 }
 
 export async function carregarGPX(
@@ -40,7 +59,7 @@ export async function carregarGPX(
 ): Promise<{ lat: number; lng: number }[]> {
   if (!url && !linhaId) return [];
   if (gpxCache[linhaId]) return gpxCache[linhaId];
-  const resolvedUrl = (await getGpxUrl(linhaId)) || url;
+  const resolvedUrl = (await getGpxUrl(linhaId, url)) || url;
   if (!resolvedUrl) return [];
   try {
     const response = await fetch(resolvedUrl);
